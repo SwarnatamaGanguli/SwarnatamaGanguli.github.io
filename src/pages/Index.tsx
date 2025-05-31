@@ -7,11 +7,15 @@ import { Projects } from "@/components/Projects";
 import { Blog } from "@/components/Blog";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
+import { CursorTrail } from "@/components/CursorTrail";
+import { ColorfulCursor } from "@/components/ColorfulCursor";
 
 const Index = () => {
   return (
     <ThemeProvider defaultTheme="light">
-      <div className="min-h-screen bg-background text-foreground">
+      <div className="min-h-screen bg-background text-foreground cursor-none">
+        <CursorTrail />
+        <ColorfulCursor />
         <Header />
         <main>
           <Hero />

@@ -98,3 +98,30 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: hsl(var(--primary)/0.8);
 }
+
+/* Colorful hover effects */
+@layer utilities {
+  .hover-rainbow {
+    @apply transition-all duration-300 hover:animate-pulse;
+  }
+  
+  .hover-rainbow:hover {
+    filter: hue-rotate(45deg) saturate(1.2) brightness(1.1);
+  }
+  
+  .color-shift {
+    @apply transition-all duration-500;
+  }
+  
+  .color-shift:hover {
+    animation: color-cycle 2s infinite;
+  }
+}
+
+@keyframes color-cycle {
+  0% { filter: hue-rotate(0deg); }
+  25% { filter: hue-rotate(90deg); }
+  50% { filter: hue-rotate(180deg); }
+  75% { filter: hue-rotate(270deg); }
+  100% { filter: hue-rotate(360deg); }
+}
