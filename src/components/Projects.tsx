@@ -36,7 +36,7 @@ export function Projects() {
   return (
     <section id="projects" className="py-20 px-6">
       <div className="container mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground hover:text-primary transition-colors duration-300">
           Key Projects & Achievements
         </h2>
         
@@ -44,20 +44,20 @@ export function Projects() {
           {projects.map((project, index) => (
             <div 
               key={index}
-              className="bg-card rounded-lg p-6 border border-border hover:shadow-lg transition-all duration-300 group hover:-translate-y-2"
+              className="bg-card rounded-lg p-6 border border-border hover:shadow-xl transition-all duration-500 group hover:-translate-y-4 transform hover:rotate-1 hover:border-primary/50"
             >
-              <h3 className="text-xl font-semibold text-card-foreground mb-3 group-hover:text-primary transition-colors">
+              <h3 className="text-xl font-semibold text-card-foreground mb-3 group-hover:text-primary transition-colors duration-300">
                 {project.title}
               </h3>
               
-              <p className="text-muted-foreground mb-4 leading-relaxed">
+              <p className="text-muted-foreground mb-4 leading-relaxed group-hover:text-foreground transition-colors duration-300">
                 {project.description}
               </p>
               
               <div className="space-y-2 mb-4">
                 {project.achievements.map((achievement, idx) => (
-                  <div key={idx} className="flex items-center text-sm text-muted-foreground">
-                    <div className="w-1.5 h-1.5 bg-primary rounded-full mr-2"></div>
+                  <div key={idx} className="flex items-center text-sm text-muted-foreground group-hover:text-foreground transition-all duration-300 hover:translate-x-2 transform">
+                    <div className="w-1.5 h-1.5 bg-primary rounded-full mr-2 group-hover:scale-150 transition-transform duration-300"></div>
                     {achievement}
                   </div>
                 ))}
@@ -67,7 +67,7 @@ export function Projects() {
                 {project.tags.map((tag, idx) => (
                   <span 
                     key={idx}
-                    className="px-3 py-1 bg-primary/10 text-primary text-xs rounded-full"
+                    className="px-3 py-1 bg-primary/10 text-primary text-xs rounded-full hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110 transform"
                   >
                     {tag}
                   </span>

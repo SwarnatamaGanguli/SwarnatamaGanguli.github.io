@@ -22,10 +22,10 @@ export function Header() {
   ];
 
   return (
-    <header className="fixed top-0 w-full bg-background/80 backdrop-blur-md border-b border-border z-50 transition-all duration-300">
+    <header className="fixed top-0 w-full bg-background/80 backdrop-blur-md border-b border-border z-50 transition-all duration-300 hover:bg-background/90">
       <div className="container mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
-          <div className="text-xl font-bold text-foreground">
+          <div className="text-xl font-bold text-foreground hover:text-primary transition-colors duration-300 hover:scale-105 transform">
             Swarnatama Ganguli
           </div>
           
@@ -34,7 +34,7 @@ export function Header() {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className={`text-sm font-medium transition-colors duration-200 hover:text-primary ${
+                className={`text-sm font-medium transition-all duration-300 hover:text-primary hover:scale-110 transform hover:-translate-y-1 ${
                   activeSection === item.id ? "text-primary" : "text-muted-foreground"
                 }`}
               >
@@ -43,7 +43,9 @@ export function Header() {
             ))}
           </nav>
 
-          <ThemeToggle />
+          <div className="hover:scale-110 transition-transform duration-300">
+            <ThemeToggle />
+          </div>
         </div>
       </div>
     </header>

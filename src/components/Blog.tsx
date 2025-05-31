@@ -27,7 +27,7 @@ export function Blog() {
   return (
     <section id="blog" className="py-20 px-6 bg-muted/30">
       <div className="container mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground hover:text-primary transition-colors duration-300">
           Latest Insights
         </h2>
         
@@ -35,18 +35,18 @@ export function Blog() {
           {blogPosts.map((post, index) => (
             <article 
               key={index}
-              className="bg-card rounded-lg p-6 border border-border hover:shadow-lg transition-all duration-300 group cursor-pointer"
+              className="bg-card rounded-lg p-6 border border-border hover:shadow-xl transition-all duration-500 group cursor-pointer hover:-translate-y-3 transform hover:rotate-1 hover:border-primary/50"
             >
-              <div className="flex justify-between items-center text-sm text-muted-foreground mb-3">
-                <span>{post.date}</span>
-                <span>{post.readTime}</span>
+              <div className="flex justify-between items-center text-sm text-muted-foreground mb-3 group-hover:text-foreground transition-colors duration-300">
+                <span className="hover:text-primary transition-colors duration-200">{post.date}</span>
+                <span className="hover:text-primary transition-colors duration-200">{post.readTime}</span>
               </div>
               
-              <h3 className="text-xl font-semibold text-card-foreground mb-3 group-hover:text-primary transition-colors">
+              <h3 className="text-xl font-semibold text-card-foreground mb-3 group-hover:text-primary transition-colors duration-300">
                 {post.title}
               </h3>
               
-              <p className="text-muted-foreground mb-4 leading-relaxed">
+              <p className="text-muted-foreground mb-4 leading-relaxed group-hover:text-foreground transition-colors duration-300">
                 {post.excerpt}
               </p>
               
@@ -54,14 +54,14 @@ export function Blog() {
                 {post.tags.map((tag, idx) => (
                   <span 
                     key={idx}
-                    className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full"
+                    className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110 transform"
                   >
                     {tag}
                   </span>
                 ))}
               </div>
               
-              <div className="text-primary font-medium text-sm group-hover:underline">
+              <div className="text-primary font-medium text-sm group-hover:underline group-hover:translate-x-2 transform transition-all duration-300">
                 Read More →
               </div>
             </article>
