@@ -8,7 +8,11 @@ export function About() {
     "Content Strategy",
     "Stakeholder Management",
     "Cybersecurity",
-    "Cloud Technologies"
+    "Cloud Technologies",
+    "Data Visualization",
+    "Power BI Analytics",
+    "Business Intelligence",
+    "Dashboard Design"
   ];
 
   return (
@@ -34,7 +38,9 @@ export function About() {
               </p>
               
               <p className="text-lg text-muted-foreground leading-relaxed hover:text-foreground transition-colors duration-300 hover:translate-x-2 transform">
-                My expertise spans across training lifecycle management, vendor relationships, 
+                As a <span className="font-semibold text-primary">Microsoft Certified Power BI Data Analyst</span>, 
+                I specialize in transforming complex data into actionable insights through compelling visualizations 
+                and interactive dashboards. My expertise spans across training lifecycle management, vendor relationships, 
                 and thought leadership in the L&D consulting domain.
               </p>
             </div>

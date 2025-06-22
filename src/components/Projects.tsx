@@ -9,27 +9,63 @@ export function Projects() {
         "Built partnerships with 1000+ consultants globally",
         "Achieved 4.8+ Google ranking with 100+ reviews"
       ],
-      tags: ["Leadership", "L&D", "Global Partnerships"]
+      tags: ["Leadership", "L&D", "Global Partnerships"],
+      image: null
     },
     {
-      title: "Digital Transformation Initiatives", 
-      description: "Led comprehensive digital transformation projects focused on learning platforms, SEO optimization, and technology integration.",
+      title: "Advanced Analytics Dashboards", 
+      description: "Created comprehensive business intelligence solutions using Power BI, transforming complex datasets into actionable insights for executive decision-making.",
       achievements: [
-        "Developed SEO-friendly websites",
-        "Implemented advanced analytics frameworks",
-        "Boosted digital visibility by 300%"
+        "Built 50+ interactive dashboards",
+        "Reduced reporting time by 80%",
+        "Improved data-driven decisions across teams"
       ],
-      tags: ["Digital Strategy", "SEO", "Analytics"]
+      tags: ["Power BI", "Data Analytics", "Business Intelligence"],
+      image: "/lovable-uploads/de63c089-cbd7-480c-a71a-58ba864c4aa7.png"
     },
     {
-      title: "Cybersecurity Leadership Programs",
-      description: "Organized exclusive cybersecurity events and roundtables in collaboration with Digital Security Foundation, fostering strategic dialogue among industry leaders.",
+      title: "Project Management Analytics",
+      description: "Developed sophisticated project tracking and performance analytics systems, enabling real-time monitoring of project health, budget utilization, and milestone achievements.",
       achievements: [
-        "Hosted CIO and CISO Roundtables",
-        "Built strategic partnerships",
-        "Enhanced brand visibility and credibility"
+        "Tracked 100+ projects simultaneously",
+        "Implemented predictive analytics models",
+        "Enhanced project success rate by 35%"
       ],
-      tags: ["Cybersecurity", "Events", "Community"]
+      tags: ["Project Analytics", "Performance Tracking", "Predictive Modeling"],
+      image: "/lovable-uploads/b9973312-e6bd-470a-b091-1aa7786ca456.png"
+    },
+    {
+      title: "Healthcare Data Visualization",
+      description: "Designed comprehensive healthcare analytics dashboards focusing on patient satisfaction, operational efficiency, and clinical outcomes for hospital management systems.",
+      achievements: [
+        "Improved patient satisfaction tracking",
+        "Optimized resource allocation",
+        "Enhanced clinical decision support"
+      ],
+      tags: ["Healthcare Analytics", "Patient Data", "Clinical Intelligence"],
+      image: "/lovable-uploads/7d65cdc0-8c18-4ce7-8e84-624639d8335c.png"
+    },
+    {
+      title: "Crime Analysis & Public Safety",
+      description: "Developed public safety analytics platform for crime pattern analysis, resource optimization, and predictive policing strategies using advanced data visualization techniques.",
+      achievements: [
+        "Identified crime hotspots effectively",
+        "Optimized patrol resource allocation",
+        "Reduced response time by 25%"
+      ],
+      tags: ["Crime Analytics", "Public Safety", "Predictive Analysis"],
+      image: "/lovable-uploads/87d6ff55-606d-4daa-acc8-dffacd1ef9e8.png"
+    },
+    {
+      title: "Financial Services Analytics",
+      description: "Built comprehensive financial analytics solutions including credit risk assessment, customer segmentation, and revenue optimization dashboards for banking and financial institutions.",
+      achievements: [
+        "Enhanced credit risk assessment accuracy",
+        "Improved customer retention by 30%",
+        "Optimized revenue streams analysis"
+      ],
+      tags: ["Financial Analytics", "Risk Assessment", "Customer Intelligence"],
+      image: "/lovable-uploads/935a517a-bffc-44e7-bb70-6f2d21aca8e3.png"
     }
   ];
 
@@ -40,38 +76,50 @@ export function Projects() {
           Key Projects & Achievements
         </h2>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {projects.map((project, index) => (
             <div 
               key={index}
-              className="bg-card rounded-lg p-6 border border-border hover:shadow-xl transition-all duration-500 group hover:-translate-y-4 transform hover:rotate-1 hover:border-primary/50"
+              className="bg-card rounded-lg overflow-hidden border border-border hover:shadow-xl transition-all duration-500 group hover:-translate-y-4 transform hover:rotate-1 hover:border-primary/50"
             >
-              <h3 className="text-xl font-semibold text-card-foreground mb-3 group-hover:text-primary transition-colors duration-300">
-                {project.title}
-              </h3>
+              {project.image && (
+                <div className="aspect-video overflow-hidden">
+                  <img 
+                    src={project.image} 
+                    alt={project.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                </div>
+              )}
               
-              <p className="text-muted-foreground mb-4 leading-relaxed group-hover:text-foreground transition-colors duration-300">
-                {project.description}
-              </p>
-              
-              <div className="space-y-2 mb-4">
-                {project.achievements.map((achievement, idx) => (
-                  <div key={idx} className="flex items-center text-sm text-muted-foreground group-hover:text-foreground transition-all duration-300 hover:translate-x-2 transform">
-                    <div className="w-1.5 h-1.5 bg-primary rounded-full mr-2 group-hover:scale-150 transition-transform duration-300"></div>
-                    {achievement}
-                  </div>
-                ))}
-              </div>
-              
-              <div className="flex flex-wrap gap-2">
-                {project.tags.map((tag, idx) => (
-                  <span 
-                    key={idx}
-                    className="px-3 py-1 bg-primary/10 text-primary text-xs rounded-full hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110 transform"
-                  >
-                    {tag}
-                  </span>
-                ))}
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-card-foreground mb-3 group-hover:text-primary transition-colors duration-300">
+                  {project.title}
+                </h3>
+                
+                <p className="text-muted-foreground mb-4 leading-relaxed group-hover:text-foreground transition-colors duration-300">
+                  {project.description}
+                </p>
+                
+                <div className="space-y-2 mb-4">
+                  {project.achievements.map((achievement, idx) => (
+                    <div key={idx} className="flex items-center text-sm text-muted-foreground group-hover:text-foreground transition-all duration-300 hover:translate-x-2 transform">
+                      <div className="w-1.5 h-1.5 bg-primary rounded-full mr-2 group-hover:scale-150 transition-transform duration-300"></div>
+                      {achievement}
+                    </div>
+                  ))}
+                </div>
+                
+                <div className="flex flex-wrap gap-2">
+                  {project.tags.map((tag, idx) => (
+                    <span 
+                      key={idx}
+                      className="px-3 py-1 bg-primary/10 text-primary text-xs rounded-full hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110 transform"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
               </div>
             </div>
           ))}
