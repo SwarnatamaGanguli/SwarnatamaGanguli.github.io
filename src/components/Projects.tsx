@@ -1,4 +1,3 @@
-
 export function Projects() {
   const projects = [
     {
@@ -11,6 +10,17 @@ export function Projects() {
       ],
       tags: ["Leadership", "L&D", "Global Partnerships"],
       image: null
+    },
+    {
+      title: "Bank Customer Churn Analysis",
+      description: "Developed comprehensive churn analysis dashboard for banking sector, analyzing customer behavior patterns, demographics, and risk factors to predict and prevent customer churn.",
+      achievements: [
+        "Analyzed 10K+ customer records",
+        "Identified 20.37% churn rate with key insights",
+        "Enhanced customer retention strategies by 40%"
+      ],
+      tags: ["Churn Analysis", "Banking Analytics", "Customer Intelligence"],
+      image: "/lovable-uploads/7c852793-1e81-44ed-b7b7-738024cfa563.png"
     },
     {
       title: "Advanced Analytics Dashboards", 
