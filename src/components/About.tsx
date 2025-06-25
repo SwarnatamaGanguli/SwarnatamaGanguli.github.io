@@ -1,4 +1,5 @@
 
+
 export function About() {
   const skills = [
     "Training & Capability Development",
@@ -13,21 +14,6 @@ export function About() {
     "Power BI Analytics",
     "Business Intelligence",
     "Dashboard Design"
-  ];
-
-  const partnerLogos = [
-    { name: "ExceleCom", logo: "/lovable-uploads/excelecom-logo.png" },
-    { name: "GPIC", logo: "/lovable-uploads/gpic-logo.png" },
-    { name: "NEC", logo: "/lovable-uploads/nec-logo.png" },
-    { name: "ExxonMobil", logo: "/lovable-uploads/exxonmobil-logo.png" },
-    { name: "Hewlett Packard Enterprise", logo: "/lovable-uploads/hpe-logo.png" },
-    { name: "Jagdale", logo: "/lovable-uploads/jagdale-logo.png" },
-    { name: "Sonata Software", logo: "/lovable-uploads/sonata-logo.png" },
-    { name: "Sony", logo: "/lovable-uploads/sony-logo.png" },
-    { name: "EY", logo: "/lovable-uploads/ey-logo.png" },
-    { name: "Zycus", logo: "/lovable-uploads/zycus-logo.png" },
-    { name: "Loyalty Methods", logo: "/lovable-uploads/loyalty-methods-logo.png" },
-    { name: "Harman", logo: "/lovable-uploads/harman-logo.png" }
   ];
 
   return (
@@ -74,32 +60,9 @@ export function About() {
               </div>
             </div>
           </div>
-
-          {/* Corporate Partnerships Section */}
-          <div className="mt-16">
-            <h3 className="text-2xl font-semibold text-center mb-8 text-foreground hover:text-primary transition-colors duration-300">
-              Provided Competency Development Solutions To
-            </h3>
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 items-center justify-items-center">
-              {partnerLogos.map((partner, index) => (
-                <div 
-                  key={index}
-                  className="w-20 h-20 flex items-center justify-center bg-card rounded-lg border border-border hover:shadow-lg transition-all duration-300 hover:scale-110 transform hover:-translate-y-2 hover:border-primary/50 group"
-                >
-                  <img 
-                    src={partner.logo} 
-                    alt={partner.name}
-                    className="max-w-full max-h-full object-contain opacity-70 group-hover:opacity-100 transition-opacity duration-300"
-                  />
-                </div>
-              ))}
-            </div>
-            <p className="text-center text-muted-foreground mt-6 hover:text-foreground transition-colors duration-300">
-              Delivered competency development solutions to Fortune 500 companies and leading enterprises across IT, Energy, Consulting, and Technology sectors
-            </p>
-          </div>
         </div>
       </div>
     </section>
   );
 }
+
