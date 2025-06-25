@@ -15,6 +15,21 @@ export function About() {
     "Dashboard Design"
   ];
 
+  const partnerLogos = [
+    { name: "ExceleCom", logo: "/lovable-uploads/d7e4eff9-1fbf-4acd-9809-04a6bcb44865.png" },
+    { name: "GPIC", logo: "/lovable-uploads/d7e4eff9-1fbf-4acd-9809-04a6bcb44865.png" },
+    { name: "NEC", logo: "/lovable-uploads/d7e4eff9-1fbf-4acd-9809-04a6bcb44865.png" },
+    { name: "ExxonMobil", logo: "/lovable-uploads/d7e4eff9-1fbf-4acd-9809-04a6bcb44865.png" },
+    { name: "Hewlett Packard Enterprise", logo: "/lovable-uploads/d7e4eff9-1fbf-4acd-9809-04a6bcb44865.png" },
+    { name: "Jagdale", logo: "/lovable-uploads/d7e4eff9-1fbf-4acd-9809-04a6bcb44865.png" },
+    { name: "Sonata Software", logo: "/lovable-uploads/d7e4eff9-1fbf-4acd-9809-04a6bcb44865.png" },
+    { name: "Sony", logo: "/lovable-uploads/d7e4eff9-1fbf-4acd-9809-04a6bcb44865.png" },
+    { name: "EY", logo: "/lovable-uploads/d7e4eff9-1fbf-4acd-9809-04a6bcb44865.png" },
+    { name: "Zycus", logo: "/lovable-uploads/d7e4eff9-1fbf-4acd-9809-04a6bcb44865.png" },
+    { name: "Loyalty Methods", logo: "/lovable-uploads/d7e4eff9-1fbf-4acd-9809-04a6bcb44865.png" },
+    { name: "Harman", logo: "/lovable-uploads/d7e4eff9-1fbf-4acd-9809-04a6bcb44865.png" }
+  ];
+
   return (
     <section id="about" className="py-20 px-6 bg-muted/30">
       <div className="container mx-auto">
@@ -23,7 +38,7 @@ export function About() {
             About Me
           </h2>
           
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div className="space-y-6 animate-slide-in">
               <p className="text-lg text-muted-foreground leading-relaxed hover:text-foreground transition-colors duration-300 hover:translate-x-2 transform">
                 I'm a seasoned leader with over 16 years of experience in B2B learning solutions sales, 
@@ -58,6 +73,30 @@ export function About() {
                 ))}
               </div>
             </div>
+          </div>
+
+          {/* Corporate Partnerships Section */}
+          <div className="mt-16">
+            <h3 className="text-2xl font-semibold text-center mb-8 text-foreground hover:text-primary transition-colors duration-300">
+              Trusted by Leading Organizations
+            </h3>
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 items-center justify-items-center">
+              {partnerLogos.map((partner, index) => (
+                <div 
+                  key={index}
+                  className="w-20 h-20 flex items-center justify-center bg-card rounded-lg border border-border hover:shadow-lg transition-all duration-300 hover:scale-110 transform hover:-translate-y-2 hover:border-primary/50 group"
+                >
+                  <img 
+                    src={partner.logo} 
+                    alt={partner.name}
+                    className="max-w-full max-h-full object-contain opacity-70 group-hover:opacity-100 transition-opacity duration-300"
+                  />
+                </div>
+              ))}
+            </div>
+            <p className="text-center text-muted-foreground mt-6 hover:text-foreground transition-colors duration-300">
+              Partnered with Fortune 500 companies and leading enterprises across IT, Energy, Consulting, and Technology sectors
+            </p>
           </div>
         </div>
       </div>
