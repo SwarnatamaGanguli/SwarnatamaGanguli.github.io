@@ -23,6 +23,18 @@ export function Projects() {
       image: "/lovable-uploads/7c852793-1e81-44ed-b7b7-738024cfa563.png"
     },
     {
+      title: "Insurance Churn Data Analysis",
+      description: "Created comprehensive Power BI dashboard analyzing insurance customer churn patterns across 10,000 customers, identifying key demographic and behavioral drivers to optimize retention strategies.",
+      achievements: [
+        "Analyzed 10K+ insurance customer records",
+        "Identified 20.37% churn rate with detailed segmentation",
+        "Developed key influencer analysis for targeted retention strategies",
+        "Created multi-dimensional analysis across age, income, product, and customer score segments"
+      ],
+      tags: ["Insurance Analytics", "Churn Analysis", "Power BI", "Customer Segmentation"],
+      image: "/lovable-uploads/b148a160-9baa-494a-87be-a230df2cb337.png"
+    },
+    {
       title: "Advanced Analytics Dashboards", 
       description: "Created comprehensive business intelligence solutions using Power BI, transforming complex datasets into actionable insights for executive decision-making.",
       achievements: [
