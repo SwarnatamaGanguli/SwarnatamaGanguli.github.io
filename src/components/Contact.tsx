@@ -1,4 +1,5 @@
 
+
 export function Contact() {
   return (
     <section id="contact" className="py-20 px-6">
@@ -57,6 +58,20 @@ export function Contact() {
                     LinkedIn Profile
                   </a>
                 </div>
+
+                <div className="flex items-center space-x-3 hover:translate-x-2 transition-transform duration-300 group">
+                  <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300">
+                    <span className="text-primary text-sm">🔗</span>
+                  </div>
+                  <a 
+                    href="https://github.com/SwarnatamaGanguli" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-primary hover:underline group-hover:text-primary/80 transition-colors duration-300"
+                  >
+                    GitHub Profile
+                  </a>
+                </div>
               </div>
             </div>
             
@@ -112,3 +127,4 @@ export function Contact() {
     </section>
   );
 }
+
