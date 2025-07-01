@@ -76,7 +76,11 @@ export function Contact() {
             </div>
             
             <div className="bg-card rounded-lg p-6 border border-border hover:shadow-xl hover:border-primary/50 transition-all duration-500 hover:-translate-y-2 transform">
-              <form className="space-y-6">
+              <form 
+                action="https://querycrm.com/f/3cwk5ehbfx" 
+                method="POST" 
+                className="space-y-6"
+              >
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2 hover:text-primary transition-colors duration-300">
                     Name
@@ -84,8 +88,10 @@ export function Contact() {
                   <input
                     type="text"
                     id="name"
+                    name="name"
                     className="w-full px-3 py-2 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary hover:border-primary/50 transition-all duration-300"
                     placeholder="Your Name"
+                    required
                   />
                 </div>
                 
@@ -96,10 +102,28 @@ export function Contact() {
                   <input
                     type="email"
                     id="email"
+                    name="email"
                     className="w-full px-3 py-2 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary hover:border-primary/50 transition-all duration-300"
                     placeholder="your.email@example.com"
+                    required
                   />
                 </div>
+
+                <div>
+                  <label htmlFor="phone" className="block text-sm font-medium text-foreground mb-2 hover:text-primary transition-colors duration-300">
+                    Phone
+                  </label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    className="w-full px-3 py-2 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary hover:border-primary/50 transition-all duration-300"
+                    placeholder="Your Phone"
+                  />
+                </div>
+
+                <input type="hidden" name="source" value="Portfolio Website" />
+                <input type="hidden" name="form_type" value="Contact Form" />
                 
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2 hover:text-primary transition-colors duration-300">
@@ -107,9 +131,11 @@ export function Contact() {
                   </label>
                   <textarea
                     id="message"
+                    name="message"
                     rows={5}
                     className="w-full px-3 py-2 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary hover:border-primary/50 transition-all duration-300"
                     placeholder="Your message..."
+                    required
                   />
                 </div>
                 
