@@ -1,6 +1,36 @@
 
+import { useState } from 'react';
 
 export function Contact() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus('idle');
+
+    const formData = new FormData(e.currentTarget);
+    
+    try {
+      const response = await fetch('https://querycrm.com/f/3cwk5ehbfx', {
+        method: 'POST',
+        body: formData,
+      });
+      
+      if (response.ok) {
+        setSubmitStatus('success');
+        e.currentTarget.reset();
+      } else {
+        setSubmitStatus('error');
+      }
+    } catch (error) {
+      setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <section id="contact" className="py-20 px-6">
       <div className="container mx-auto">
@@ -77,8 +107,7 @@ export function Contact() {
             
             <div className="bg-card rounded-lg p-6 border border-border hover:shadow-xl hover:border-primary/50 transition-all duration-500 hover:-translate-y-2 transform">
               <form 
-                action="https://querycrm.com/f/3cwk5ehbfx" 
-                method="POST" 
+                onSubmit={handleSubmit}
                 className="space-y-6"
               >
                 <div>
@@ -141,10 +170,23 @@ export function Contact() {
                 
                 <button
                   type="submit"
-                  className="w-full px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-all duration-300 font-medium hover:scale-105 hover:shadow-lg transform"
+                  disabled={isSubmitting}
+                  className="w-full px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-all duration-300 font-medium hover:scale-105 hover:shadow-lg transform disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  Send Message
+                  {isSubmitting ? 'Sending...' : 'Send Message'}
                 </button>
+
+                {submitStatus === 'success' && (
+                  <div className="text-green-600 text-center font-medium">
+                    Message sent successfully!
+                  </div>
+                )}
+
+                {submitStatus === 'error' && (
+                  <div className="text-red-600 text-center font-medium">
+                    Failed to send message. Please try again.
+                  </div>
+                )}
               </form>
             </div>
           </div>
@@ -153,4 +195,3 @@ export function Contact() {
     </section>
   );
 }
-
