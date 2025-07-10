@@ -5,11 +5,23 @@ export function Projects() {
       description: "Founded and scaled a high-impact Learning & Development consulting enterprise, delivering strategic training interventions across IT and non-IT companies in India and the Middle East.",
       achievements: [
         "Successfully delivered 500+ workshops",
-        "Built partnerships with 1000+ consultants globally",
+        "Built partnerships with 1000+ consultants globally", 
         "Achieved 4.8+ Google ranking with 100+ reviews"
       ],
       tags: ["Leadership", "L&D", "Global Partnerships"],
       image: null
+    },
+    {
+      title: "The Premium Chocolate Factory – Sales Highlights 2023",
+      description: "Comprehensive sales analysis dashboard for premium chocolate manufacturing, tracking performance across products, regions, and sales teams. World's most delivered chocolate with consistent monthly performance.",
+      achievements: [
+        "Achieved $5.37M total sales with 516K boxes sold",
+        "Maintained consistent $0.4M-$0.6M monthly sales performance",
+        "Analyzed top 5 international markets and sales team performance",
+        "Identified top 10 product performers led by Peanut Butter Delight ($0.63M)"
+      ],
+      tags: ["Sales Analytics", "Product Performance", "International Markets", "Team Performance"],
+      image: "/lovable-uploads/df2c9e1f-020a-4cf8-932b-b861056c1c9b.png"
     },
     {
       title: "Bank Customer Churn Analysis",
