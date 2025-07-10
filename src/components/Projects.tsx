@@ -24,6 +24,18 @@ export function Projects() {
       image: "/lovable-uploads/df2c9e1f-020a-4cf8-932b-b861056c1c9b.png"
     },
     {
+      title: "Motor Insurance Data Analysis – Summary Report",
+      description: "Comprehensive Power BI dashboard analyzing motor insurance performance metrics across regions, time periods, and product categories. Features AI-driven insights for policy management and customer retention strategies.",
+      achievements: [
+        "Analyzed ₹38.59M total premium with 2,000 policies tracked",
+        "Achieved 51.6% conversion rate with 418.12 days average policy tenure",
+        "Identified regional performance patterns across East, Southern, Northern, and West regions",
+        "Implemented AI insights showing 47% reduction in lapses (Jan-Apr 2024: 19→9)"
+      ],
+      tags: ["Motor Insurance", "Policy Analytics", "Regional Analysis", "AI Insights"],
+      image: "/lovable-uploads/002463ec-6805-4483-bf91-7bbad37933fe.png"
+    },
+    {
       title: "Bank Customer Churn Analysis",
       description: "Developed comprehensive churn analysis dashboard for banking sector, analyzing customer behavior patterns, demographics, and risk factors to predict and prevent customer churn.",
       achievements: [
