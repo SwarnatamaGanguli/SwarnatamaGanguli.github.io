@@ -1,3 +1,5 @@
+import { Github } from "lucide-react";
+
 export function Projects() {
   const projects = [
     {
@@ -9,7 +11,8 @@ export function Projects() {
         "Achieved 4.8+ Google ranking with 100+ reviews"
       ],
       tags: ["Leadership", "L&D", "Global Partnerships"],
-      image: null
+      image: null,
+      github: null
     },
     {
       title: "The Premium Chocolate Factory – Sales Highlights 2023",
@@ -21,7 +24,8 @@ export function Projects() {
         "Identified top 10 product performers led by Peanut Butter Delight ($0.63M)"
       ],
       tags: ["Sales Analytics", "Product Performance", "International Markets", "Team Performance"],
-      image: "/lovable-uploads/df2c9e1f-020a-4cf8-932b-b861056c1c9b.png"
+      image: "/lovable-uploads/df2c9e1f-020a-4cf8-932b-b861056c1c9b.png",
+      github: null
     },
     {
       title: "Motor Insurance Data Analysis – Summary Report",
@@ -33,7 +37,8 @@ export function Projects() {
         "Implemented AI insights showing 47% reduction in lapses (Jan-Apr 2024: 19→9)"
       ],
       tags: ["Motor Insurance", "Policy Analytics", "Regional Analysis", "AI Insights"],
-      image: "/lovable-uploads/002463ec-6805-4483-bf91-7bbad37933fe.png"
+      image: "/lovable-uploads/002463ec-6805-4483-bf91-7bbad37933fe.png",
+      github: null
     },
     {
       title: "Cat Bite Trends in Kashmir and Treatment Dashboard",
@@ -45,7 +50,8 @@ export function Projects() {
         "Developed treatment cost analysis and estimated recovery metrics"
       ],
       tags: ["Healthcare Analytics", "Public Health", "Injury Prevention", "Treatment Analysis"],
-      image: "/lovable-uploads/e3684537-791c-4dca-ac45-d40b166ae5d8.png"
+      image: "/lovable-uploads/e3684537-791c-4dca-ac45-d40b166ae5d8.png",
+      github: "https://github.com/SwarnatamaGanguli/Admission-report"
     },
     {
       title: "Hospital Management Analytics Dashboard",
@@ -57,7 +63,8 @@ export function Projects() {
         "Implemented patient satisfaction scoring system with 5.44 average satisfaction rate"
       ],
       tags: ["Hospital Management", "Healthcare Analytics", "Patient Flow", "Billing Analytics"],
-      image: "/lovable-uploads/3f943837-5c7a-48c6-9216-2e9e818061b3.png"
+      image: "/lovable-uploads/3f943837-5c7a-48c6-9216-2e9e818061b3.png",
+      github: null
     },
     {
       title: "Educational Admission Analytics Dashboard",
@@ -69,7 +76,8 @@ export function Projects() {
         "Implemented multi-dimensional analysis across BPT, Pharmacy, Biotech, and Radiology programs"
       ],
       tags: ["Educational Analytics", "Admission Management", "Student Enrollment", "Course Performance"],
-      image: "/lovable-uploads/3fc2f062-83e4-41f9-99bb-aae6dcf63a02.png"
+      image: "/lovable-uploads/3fc2f062-83e4-41f9-99bb-aae6dcf63a02.png",
+      github: null
     },
     {
       title: "Bank Customer Churn Analysis",
@@ -80,7 +88,8 @@ export function Projects() {
         "Enhanced customer retention strategies by 40%"
       ],
       tags: ["Churn Analysis", "Banking Analytics", "Customer Intelligence"],
-      image: "/lovable-uploads/7c852793-1e81-44ed-b7b7-738024cfa563.png"
+      image: "/lovable-uploads/7c852793-1e81-44ed-b7b7-738024cfa563.png",
+      github: null
     },
     {
       title: "Insurance Churn Data Analysis",
@@ -92,7 +101,8 @@ export function Projects() {
         "Created multi-dimensional analysis across age, income, product, and customer score segments"
       ],
       tags: ["Insurance Analytics", "Churn Analysis", "Power BI", "Customer Segmentation"],
-      image: "/lovable-uploads/b148a160-9baa-494a-87be-a230df2cb337.png"
+      image: "/lovable-uploads/8c22d14b-28e6-48ed-a4b9-dbc9a9801e39.png",
+      github: "https://github.com/SwarnatamaGanguli/Insurance_churn_dataanalysis"
     },
     {
       title: "Advanced Analytics Dashboards", 
@@ -103,7 +113,8 @@ export function Projects() {
         "Improved data-driven decisions across teams"
       ],
       tags: ["Power BI", "Data Analytics", "Business Intelligence"],
-      image: "/lovable-uploads/de63c089-cbd7-480c-a71a-58ba864c4aa7.png"
+      image: "/lovable-uploads/de63c089-cbd7-480c-a71a-58ba864c4aa7.png",
+      github: null
     },
     {
       title: "Project Management Analytics",
@@ -114,7 +125,8 @@ export function Projects() {
         "Enhanced project success rate by 35%"
       ],
       tags: ["Project Analytics", "Performance Tracking", "Predictive Modeling"],
-      image: "/lovable-uploads/b9973312-e6bd-470a-b091-1aa7786ca456.png"
+      image: "/lovable-uploads/b9973312-e6bd-470a-b091-1aa7786ca456.png",
+      github: null
     },
     {
       title: "Healthcare Data Visualization",
@@ -125,7 +137,8 @@ export function Projects() {
         "Enhanced clinical decision support"
       ],
       tags: ["Healthcare Analytics", "Patient Data", "Clinical Intelligence"],
-      image: "/lovable-uploads/7d65cdc0-8c18-4ce7-8e84-624639d8335c.png"
+      image: "/lovable-uploads/7d65cdc0-8c18-4ce7-8e84-624639d8335c.png",
+      github: null
     },
     {
       title: "Crime Analysis & Public Safety",
@@ -136,7 +149,8 @@ export function Projects() {
         "Reduced response time by 25%"
       ],
       tags: ["Crime Analytics", "Public Safety", "Predictive Analysis"],
-      image: "/lovable-uploads/87d6ff55-606d-4daa-acc8-dffacd1ef9e8.png"
+      image: "/lovable-uploads/87d6ff55-606d-4daa-acc8-dffacd1ef9e8.png",
+      github: null
     },
     {
       title: "Financial Services Analytics",
@@ -147,7 +161,8 @@ export function Projects() {
         "Optimized revenue streams analysis"
       ],
       tags: ["Financial Analytics", "Risk Assessment", "Customer Intelligence"],
-      image: "/lovable-uploads/935a517a-bffc-44e7-bb70-6f2d21aca8e3.png"
+      image: "/lovable-uploads/935a517a-bffc-44e7-bb70-6f2d21aca8e3.png",
+      github: null
     }
   ];
 
@@ -192,7 +207,7 @@ export function Projects() {
                   ))}
                 </div>
                 
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 mb-4">
                   {project.tags.map((tag, idx) => (
                     <span 
                       key={idx}
@@ -202,6 +217,20 @@ export function Projects() {
                     </span>
                   ))}
                 </div>
+                
+                {project.github && (
+                  <div className="pt-4 border-t border-border">
+                    <a 
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors duration-300 text-sm font-medium"
+                    >
+                      <Github size={16} />
+                      View on GitHub
+                    </a>
+                  </div>
+                )}
               </div>
             </div>
           ))}
