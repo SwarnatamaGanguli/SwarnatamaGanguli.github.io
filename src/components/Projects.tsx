@@ -36,6 +36,30 @@ export function Projects() {
       image: "/lovable-uploads/002463ec-6805-4483-bf91-7bbad37933fe.png"
     },
     {
+      title: "Cat Bite Trends in Kashmir and Treatment Dashboard",
+      description: "Comprehensive healthcare analytics dashboard tracking cat bite incidents in Kashmir region, analyzing severity patterns, victim demographics, and treatment effectiveness across different age groups and locations.",
+      achievements: [
+        "Analyzed 500+ cat bite incidents with severity distribution tracking",
+        "Identified peak incident trends with 24.60% most affected in Teen (13-19) age group",
+        "Mapped geographical distribution across Srinagar and surrounding areas",
+        "Developed treatment cost analysis and estimated recovery metrics"
+      ],
+      tags: ["Healthcare Analytics", "Public Health", "Injury Prevention", "Treatment Analysis"],
+      image: "/lovable-uploads/e3684537-791c-4dca-ac45-d40b166ae5d8.png"
+    },
+    {
+      title: "Hospital Management Analytics Dashboard",
+      description: "Advanced Power BI dashboard providing comprehensive hospital operations analysis including patient flow, billing optimization, treatment costs, and departmental performance metrics for enhanced healthcare management.",
+      achievements: [
+        "Tracked $4.3M total billing with $2.7M treatment costs across departments",
+        "Analyzed 484 total patients with detailed weekday admission patterns",
+        "Optimized department performance tracking (Internal Medicine: $1.17M, Orthopedics: $1.07M)",
+        "Implemented patient satisfaction scoring system with 5.44 average satisfaction rate"
+      ],
+      tags: ["Hospital Management", "Healthcare Analytics", "Patient Flow", "Billing Analytics"],
+      image: "/lovable-uploads/3f943837-5c7a-48c6-9216-2e9e818061b3.png"
+    },
+    {
       title: "Bank Customer Churn Analysis",
       description: "Developed comprehensive churn analysis dashboard for banking sector, analyzing customer behavior patterns, demographics, and risk factors to predict and prevent customer churn.",
       achievements: [
