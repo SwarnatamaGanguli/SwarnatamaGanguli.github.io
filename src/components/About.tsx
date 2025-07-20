@@ -2,18 +2,18 @@
 
 export function About() {
   const skills = [
-    "Training & Capability Development",
-    "B2B Learning Solutions",
-    "Digital Transformation", 
-    "Leadership Development",
-    "Content Strategy",
-    "Stakeholder Management",
-    "Cybersecurity",
-    "Cloud Technologies",
-    "Data Visualization",
-    "Power BI Analytics",
-    "Business Intelligence",
-    "Dashboard Design"
+    "Data Analytics & Visualization",
+    "Generative AI & Machine Learning",
+    "Power BI & Business Intelligence",
+    "Statistical Analysis & Modeling",
+    "Healthcare Analytics",
+    "Motor Insurance Analytics",
+    "Educational Data Insights",
+    "Dashboard Design & Development",
+    "Python & R Programming",
+    "SQL & Database Management",
+    "Azure AI & Cloud Technologies",
+    "Prompt Engineering & AI Implementation"
   ];
 
   return (
@@ -27,22 +27,22 @@ export function About() {
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div className="space-y-6 animate-slide-in">
               <p className="text-lg text-muted-foreground leading-relaxed hover:text-foreground transition-colors duration-300 hover:translate-x-2 transform">
-                I'm a seasoned leader with over 16 years of experience in B2B learning solutions sales, 
-                specializing in curating content based on business needs and providing suitable solutions 
-                to corporate sectors.
+                I'm a passionate Data Analytics & Generative AI practitioner with extensive experience in 
+                transforming complex datasets into actionable business insights. I specialize in developing 
+                comprehensive analytics solutions across healthcare, insurance, and educational sectors.
               </p>
               
               <p className="text-lg text-muted-foreground leading-relaxed hover:text-foreground transition-colors duration-300 hover:translate-x-2 transform">
-                Currently serving as Founder Director of KPI Ladder, where I lead strategic initiatives 
-                in generative AI, power platforms, cybersecurity, and digital transformation. I'm passionate 
-                about forging global partnerships and delivering high-impact learning programs.
+                Currently serving as Founder Director of KPI Ladder, where I lead data-driven initiatives 
+                in AI implementation, advanced analytics, and business intelligence solutions. I'm passionate 
+                about leveraging generative AI to solve real-world business challenges and drive digital transformation.
               </p>
               
               <p className="text-lg text-muted-foreground leading-relaxed hover:text-foreground transition-colors duration-300 hover:translate-x-2 transform">
                 As a <span className="font-semibold text-primary">Microsoft Certified Power BI Data Analyst</span>, 
-                I specialize in transforming complex data into actionable insights through compelling visualizations 
-                and interactive dashboards. My expertise spans across training lifecycle management, vendor relationships, 
-                and thought leadership in the L&D consulting domain.
+                I excel in creating compelling visualizations, interactive dashboards, and predictive models. 
+                My portfolio includes successful projects in motor insurance analytics, healthcare data insights, 
+                and educational admission pattern analysis, delivering measurable business impact through data-driven solutions.
               </p>
             </div>
             
