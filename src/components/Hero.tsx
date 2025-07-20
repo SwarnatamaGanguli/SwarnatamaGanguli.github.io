@@ -15,11 +15,17 @@ export function Hero() {
           Swarnatama Ganguli
         </h1>
         
-        <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed hover:text-foreground transition-colors duration-300">
-          Data Analytics & Generative AI Practitioner | Microsoft Certified Power BI Data Analyst
-          <br />
-          Transforming complex data into actionable insights across healthcare, insurance & educational sectors
-        </p>
+        <div className="space-y-4 mb-8">
+          <p className="text-xl md:text-2xl font-semibold text-primary">
+            Data Analytics & Generative AI Practitioner
+          </p>
+          <p className="text-lg md:text-xl text-muted-foreground">
+            Microsoft Certified Power BI Data Analyst
+          </p>
+          <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+            Transforming complex data into actionable insights across healthcare, insurance & educational sectors
+          </p>
+        </div>
         
         <div className="flex items-center justify-center gap-6 mb-8">
           <a 
