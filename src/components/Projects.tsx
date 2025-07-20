@@ -60,6 +60,18 @@ export function Projects() {
       image: "/lovable-uploads/3f943837-5c7a-48c6-9216-2e9e818061b3.png"
     },
     {
+      title: "Educational Admission Analytics Dashboard",
+      description: "Comprehensive Power BI dashboard analyzing student admission patterns across multiple courses (MBA, RANU, SUMAN) for May-July period, tracking conversion rates, payment status, and enrollment trends.",
+      achievements: [
+        "Analyzed 178 total candidates with 71 successful admissions (39.89% success rate)",
+        "Tracked payment patterns across weekdays vs weekends with detailed course-wise breakdown",
+        "Monitored pending registrations (42) and payment received (71) for operational efficiency",
+        "Implemented multi-dimensional analysis across BPT, Pharmacy, Biotech, and Radiology programs"
+      ],
+      tags: ["Educational Analytics", "Admission Management", "Student Enrollment", "Course Performance"],
+      image: "/lovable-uploads/3fc2f062-83e4-41f9-99bb-aae6dcf63a02.png"
+    },
+    {
       title: "Bank Customer Churn Analysis",
       description: "Developed comprehensive churn analysis dashboard for banking sector, analyzing customer behavior patterns, demographics, and risk factors to predict and prevent customer churn.",
       achievements: [
