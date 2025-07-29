@@ -101,7 +101,7 @@ export function Projects() {
         "Created multi-dimensional analysis across age, income, product, and customer score segments"
       ],
       tags: ["Insurance Analytics", "Churn Analysis", "Power BI", "Customer Segmentation"],
-      image: "/lovable-uploads/8c22d14b-28e6-48ed-a4b9-dbc9a9801e39.png",
+      image: "/lovable-uploads/8d2171d3-f6e4-441e-a468-565269864c24.png",
       github: "https://github.com/SwarnatamaGanguli/Insurance_churn_dataanalysis"
     },
     {
