@@ -115,7 +115,7 @@ export function Projects() {
       ],
       tags: ["EV Analytics", "Transportation Data", "Geographic Analysis", "Market Trends"],
       image: "/lovable-uploads/17094a4f-8384-4909-a4d2-6a4d44ab2b44.png",
-      github: null
+      github: "https://github.com/SwarnatamaGanguli/EV-data"
     },
     {
       title: "Advanced Analytics Dashboards", 
