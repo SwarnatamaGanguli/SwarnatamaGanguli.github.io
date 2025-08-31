@@ -105,6 +105,19 @@ export function Projects() {
       github: "https://github.com/SwarnatamaGanguli/Insurance_churn_dataanalysis"
     },
     {
+      title: "Electric Vehicle Population Data Analysis",
+      description: "Comprehensive analysis of Electric Vehicle (EV) population data primarily in Washington State and other states, offering insights into adoption trends, vehicle types, manufacturers, and city-level distribution patterns.",
+      achievements: [
+        "Analyzed 258K+ electric vehicle registrations in Washington State",
+        "Tracked 79.61% Battery Electric Vehicle (BEV) adoption rate",
+        "Mapped geographic distribution across cities and regions",
+        "Analyzed EV manufacturers and model year trends for market insights"
+      ],
+      tags: ["EV Analytics", "Transportation Data", "Geographic Analysis", "Market Trends"],
+      image: "/lovable-uploads/17094a4f-8384-4909-a4d2-6a4d44ab2b44.png",
+      github: null
+    },
+    {
       title: "Advanced Analytics Dashboards", 
       description: "Created comprehensive business intelligence solutions using Power BI, transforming complex datasets into actionable insights for executive decision-making.",
       achievements: [
