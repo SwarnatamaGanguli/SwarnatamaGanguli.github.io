@@ -12,6 +12,9 @@ export function About() {
     "Dashboard Design & Development",
     "Python & R Programming",
     "SQL & Database Management",
+    "PySpark & Big Data Processing",
+    "PySql & Data Engineering",
+    "Microsoft Fabric",
     "Azure AI & Cloud Technologies",
     "Prompt Engineering & AI Implementation"
   ];
