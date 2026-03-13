@@ -1,28 +1,53 @@
 import { useState } from 'react';
+import { z } from 'zod';
+
+const contactSchema = z.object({
+  name: z.string().trim().min(1, 'Name is required').max(100, 'Name must be less than 100 characters'),
+  email: z.string().trim().email('Invalid email address').max(255, 'Email must be less than 255 characters'),
+  phone: z.string().trim().max(20, 'Phone must be less than 20 characters').regex(/^[+\d\s()-]*$/, 'Invalid phone number format').optional().or(z.literal('')),
+  message: z.string().trim().min(1, 'Message is required').max(2000, 'Message must be less than 2000 characters'),
+});
 
 export function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [validationErrors, setValidationErrors] = useState<Record<string, string>>({});
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitStatus('idle');
+    setValidationErrors({});
 
     const formData = new FormData(e.currentTarget);
-    
+    const rawData = {
+      name: formData.get('name') as string,
+      email: formData.get('email') as string,
+      phone: formData.get('phone') as string,
+      message: formData.get('message') as string,
+    };
+
+    const result = contactSchema.safeParse(rawData);
+    if (!result.success) {
+      const errors: Record<string, string> = {};
+      result.error.errors.forEach((err) => {
+        if (err.path[0]) errors[err.path[0] as string] = err.message;
+      });
+      setValidationErrors(errors);
+      setIsSubmitting(false);
+      return;
+    }
+
     try {
-      const response = await fetch('https://querycrm.com/f/3cwk5ehbfx', {
+      await fetch('https://querycrm.com/f/3cwk5ehbfx', {
         method: 'POST',
-        mode: 'no-cors', // This prevents CORS errors
+        mode: 'no-cors',
         body: formData,
       });
       
-      // With no-cors mode, we can't check response.ok, so we assume success
       setSubmitStatus('success');
       e.currentTarget.reset();
-    } catch (error) {
-      console.error('Form submission error:', error);
+    } catch {
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
