@@ -191,10 +191,12 @@ export function Contact() {
                     id="message"
                     name="message"
                     rows={5}
+                    maxLength={2000}
                     className="w-full px-3 py-2 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary hover:border-primary/50 transition-all duration-300"
                     placeholder="Your message..."
                     required
                   />
+                  {validationErrors.message && <p className="text-destructive text-sm mt-1">{validationErrors.message}</p>}
                 </div>
                 
                 <button
@@ -206,13 +208,13 @@ export function Contact() {
                 </button>
 
                 {submitStatus === 'success' && (
-                  <div className="text-green-600 text-center font-medium">
+                  <div className="text-destructive-foreground bg-accent/20 text-center font-medium p-2 rounded">
                     Message sent successfully!
                   </div>
                 )}
 
                 {submitStatus === 'error' && (
-                  <div className="text-red-600 text-center font-medium">
+                  <div className="text-destructive text-center font-medium p-2 rounded">
                     Failed to send message. Please try again.
                   </div>
                 )}
