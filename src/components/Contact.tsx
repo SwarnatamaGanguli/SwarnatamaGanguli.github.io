@@ -141,10 +141,12 @@ export function Contact() {
                     type="text"
                     id="name"
                     name="name"
+                    maxLength={100}
                     className="w-full px-3 py-2 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary hover:border-primary/50 transition-all duration-300"
                     placeholder="Your Name"
                     required
                   />
+                  {validationErrors.name && <p className="text-destructive text-sm mt-1">{validationErrors.name}</p>}
                 </div>
                 
                 <div>
@@ -155,10 +157,12 @@ export function Contact() {
                     type="email"
                     id="email"
                     name="email"
+                    maxLength={255}
                     className="w-full px-3 py-2 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary hover:border-primary/50 transition-all duration-300"
                     placeholder="your.email@example.com"
                     required
                   />
+                  {validationErrors.email && <p className="text-destructive text-sm mt-1">{validationErrors.email}</p>}
                 </div>
 
                 <div>
@@ -169,9 +173,11 @@ export function Contact() {
                     type="tel"
                     id="phone"
                     name="phone"
+                    maxLength={20}
                     className="w-full px-3 py-2 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary hover:border-primary/50 transition-all duration-300"
                     placeholder="Your Phone"
                   />
+                  {validationErrors.phone && <p className="text-destructive text-sm mt-1">{validationErrors.phone}</p>}
                 </div>
 
                 <input type="hidden" name="source" value="Portfolio Website" />
