@@ -168,7 +168,7 @@ export function Contact() {
                     Phone
                   </label>
                   <input
-                    type="tel"
+                    type="text"
                     id="phone"
                     name="phone"
                     maxLength={20}
