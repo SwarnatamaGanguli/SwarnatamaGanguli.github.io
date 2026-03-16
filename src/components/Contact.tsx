@@ -144,7 +144,6 @@ export function Contact() {
                     maxLength={100}
                     className="w-full px-3 py-2 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary hover:border-primary/50 transition-all duration-300"
                     placeholder="Your Name"
-                    required
                   />
                   {validationErrors.name && <p className="text-destructive text-sm mt-1">{validationErrors.name}</p>}
                 </div>
@@ -160,7 +159,6 @@ export function Contact() {
                     maxLength={255}
                     className="w-full px-3 py-2 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary hover:border-primary/50 transition-all duration-300"
                     placeholder="your.email@example.com"
-                    required
                   />
                   {validationErrors.email && <p className="text-destructive text-sm mt-1">{validationErrors.email}</p>}
                 </div>
@@ -170,7 +168,7 @@ export function Contact() {
                     Phone
                   </label>
                   <input
-                    type="tel"
+                    type="text"
                     id="phone"
                     name="phone"
                     maxLength={20}
@@ -194,7 +192,6 @@ export function Contact() {
                     maxLength={2000}
                     className="w-full px-3 py-2 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary hover:border-primary/50 transition-all duration-300"
                     placeholder="Your message..."
-                    required
                   />
                   {validationErrors.message && <p className="text-destructive text-sm mt-1">{validationErrors.message}</p>}
                 </div>
