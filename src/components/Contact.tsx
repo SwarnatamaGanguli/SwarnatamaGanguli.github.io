@@ -144,9 +144,8 @@ export function Contact() {
                     maxLength={100}
                     className="w-full px-3 py-2 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary hover:border-primary/50 transition-all duration-300"
                     placeholder="Your Name"
-                    required
                   />
-                  {validationErrors.name && <p className="text-destructive text-sm mt-1">{validationErrors.name}</p>}
+                  {validationErrors.name && <p className="text-red-600 text-sm mt-1">{validationErrors.name}</p>}
                 </div>
                 
                 <div>
