@@ -17,13 +17,13 @@ export function Hero() {
         
         <div className="space-y-4 mb-8">
           <p className="text-xl md:text-2xl font-semibold text-primary">
-            Data Analytics & Generative AI Practitioner
+            Generative AI & LLM Practitioner
           </p>
           <p className="text-lg md:text-xl text-muted-foreground">
             Microsoft Certified: Fabric Analytics Engineer Associate | MSc Data Science
           </p>
           <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            LangChain · Ollama · RAG · Streamlit · Gradio
+            LangChain · Ollama · RAG · Streamlit · Gradio · Python
           </p>
           <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             Building Python-powered GenAI solutions, RAG chatbots, and enterprise analytics across healthcare, insurance & education
