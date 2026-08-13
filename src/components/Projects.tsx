@@ -1,5 +1,4 @@
 import { Github } from "lucide-react";
-import ragChatbotImage from "@/assets/rag-chatbot-ui.png.asset.json";
 
 export function Projects() {
   const projects = [
