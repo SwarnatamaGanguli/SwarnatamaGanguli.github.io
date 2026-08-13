@@ -1,7 +1,56 @@
 import { Github } from "lucide-react";
+import ragChatbotImage from "@/assets/rag-chatbot-ui.png.asset.json";
 
 export function Projects() {
   const projects = [
+    {
+      title: "RAG Chatbot with LangChain & Ollama",
+      description: "Conversational AI application built with LangChain and Ollama, enabling retrieval-augmented generation over indexed documents. Features knowledge-base ingestion, source attribution, and an interactive chat UI.",
+      achievements: [
+        "Ingested and indexed document chunks for grounded question answering",
+        "Implemented retrieval-augmented generation with cited source documents",
+        "Built an interactive chat interface for document-based Q&A"
+      ],
+      tags: ["LangChain", "Ollama", "RAG", "Python", "GenAI"],
+      image: ragChatbotImage.url,
+      github: "https://github.com/SwarnatamaGanguli/rag_chatbot"
+    },
+    {
+      title: "Pharma Conversational Analytics",
+      description: "End-to-end conversational analytics solution for pharmaceutical data, enabling stakeholders to explore datasets and uncover insights through natural language interaction.",
+      achievements: [
+        "Designed a chat-driven interface for querying pharmaceutical datasets",
+        "Applied LLM-powered reasoning for business-facing insights",
+        "Streamlined access to complex analytics for non-technical users"
+      ],
+      tags: ["LangChain", "Conversational Analytics", "Python", "GenAI", "Pharma"],
+      image: null,
+      github: "https://github.com/SwarnatamaGanguli/pharma_conversational_analytics"
+    },
+    {
+      title: "Python App with Gradio",
+      description: "Generative AI application prototype built with Gradio, showcasing rapid UI development for interactive machine learning and LLM-powered demos.",
+      achievements: [
+        "Created a responsive web UI for Python-based ML workflows",
+        "Integrated LLM capabilities into an accessible Gradio interface",
+        "Demonstrated fast prototyping of AI-powered applications"
+      ],
+      tags: ["Gradio", "Python", "LLM", "GenAI", "UI"],
+      image: null,
+      github: "https://github.com/SwarnatamaGanguli/python_app_with_gradio"
+    },
+    {
+      title: "EDA: From Messy Data to Insights",
+      description: "Comprehensive exploratory data analysis project demonstrating end-to-end data cleaning, transformation, visualization, and insight extraction from unstructured, real-world datasets.",
+      achievements: [
+        "Performed data cleaning and transformation on messy datasets",
+        "Generated visualizations that reveal actionable patterns",
+        "Delivered end-to-end analytical insights from raw data"
+      ],
+      tags: ["EDA", "Python", "Data Cleaning", "Visualization"],
+      image: null,
+      github: "https://github.com/SwarnatamaGanguli/eda-from-messy-data-to-insights"
+    },
     {
       title: "KPI Ladder Consulting Enterprise",
       description: "Founded and scaled a high-impact Learning & Development consulting enterprise, delivering strategic training interventions across IT and non-IT companies in India and the Middle East.",

@@ -20,10 +20,13 @@ export function Hero() {
             Data Analytics & Generative AI Practitioner
           </p>
           <p className="text-lg md:text-xl text-muted-foreground">
-            Microsoft Certified Power BI Data Analyst | Microsoft Certified: Fabric Analytics Engineer Associate
+            Microsoft Certified: Fabric Analytics Engineer Associate | MSc Data Science
           </p>
           <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Transforming complex data into actionable insights across healthcare, insurance & educational sectors
+            LangChain · Ollama · RAG · Streamlit · Gradio
+          </p>
+          <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+            Building Python-powered GenAI solutions, RAG chatbots, and enterprise analytics across healthcare, insurance & education
           </p>
         </div>
         

@@ -2,18 +2,22 @@
 
 export function About() {
   const skills = [
+    "Generative AI & LLM Implementation",
+    "LangChain & LLM Orchestration",
+    "RAG (Retrieval-Augmented Generation)",
+    "Ollama & Local LLM Deployment",
+    "Streamlit & Gradio App Development",
+    "Python & R for Data Science & AI",
     "Data Analytics & Visualization",
-    "Generative AI & Machine Learning",
     "Power BI & Business Intelligence",
     "Statistical Analysis & Modeling",
     "Healthcare Analytics",
     "Motor Insurance Analytics",
     "Educational Data Insights",
     "Dashboard Design & Development",
-    "Python & R Programming",
     "SQL & Database Management",
     "PySpark & Big Data Processing",
-    "PySql & Data Engineering",
+    "Data Engineering & ETL",
     "Microsoft Fabric",
     "Azure AI & Cloud Technologies",
     "Prompt Engineering & AI Implementation"
@@ -30,9 +34,10 @@ export function About() {
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div className="space-y-6 animate-slide-in">
               <p className="text-lg text-muted-foreground leading-relaxed hover:text-foreground transition-colors duration-300 hover:translate-x-2 transform">
-                I'm a passionate Data Analytics & Generative AI practitioner with extensive experience in 
-                transforming complex datasets into actionable business insights. I specialize in developing 
-                comprehensive analytics solutions across healthcare, insurance, and educational sectors.
+                I'm a passionate Data Analytics & Generative AI practitioner with hands-on experience in 
+                building RAG-based chatbots, LLM workflows, and Python-powered analytics. I specialize in 
+                transforming complex datasets into actionable business insights using tools like LangChain, 
+                Ollama, Streamlit, and Gradio across healthcare, insurance, and educational sectors.
               </p>
               
               <p className="text-lg text-muted-foreground leading-relaxed hover:text-foreground transition-colors duration-300 hover:translate-x-2 transform">
@@ -42,10 +47,11 @@ export function About() {
               </p>
               
               <p className="text-lg text-muted-foreground leading-relaxed hover:text-foreground transition-colors duration-300 hover:translate-x-2 transform">
-                As a <span className="font-semibold text-primary">Microsoft Certified Power BI Data Analyst</span>, 
-                I excel in creating compelling visualizations, interactive dashboards, and predictive models. 
-                My portfolio includes successful projects in motor insurance analytics, healthcare data insights, 
-                and educational admission pattern analysis, delivering measurable business impact through data-driven solutions.
+                As a <span className="font-semibold text-primary">Microsoft Certified: Fabric Analytics Engineer Associate with an MSc in Data Science</span>, 
+                I combine strong data engineering foundations with modern GenAI tooling to create RAG chatbots, 
+                interactive dashboards, and predictive models. My portfolio includes successful projects in 
+                motor insurance analytics, healthcare data insights, and educational admission pattern analysis, 
+                delivering measurable business impact through data-driven solutions.
               </p>
             </div>
             
