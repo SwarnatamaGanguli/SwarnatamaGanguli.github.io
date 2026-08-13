@@ -12,7 +12,7 @@ export function Projects() {
         "Built an interactive chat interface for document-based Q&A"
       ],
       tags: ["LangChain", "Ollama", "RAG", "Python", "GenAI"],
-      image: ragChatbotImage.url,
+      image: "/lovable-uploads/rag-chatbot-ui.png",
       github: "https://github.com/SwarnatamaGanguli/rag_chatbot"
     },
     {
