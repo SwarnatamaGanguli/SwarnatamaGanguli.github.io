@@ -8,7 +8,7 @@ export function Hero() {
           <img
             src={swarnaImage.url}
             alt="Swarnatama Ganguli"
-            className="w-48 h-48 md:w-56 md:h-56 rounded-full mx-auto mb-6 object-cover border-4 border-primary/20 hover:border-primary/40 hover:scale-110 transition-all duration-500 hover:rotate-6"
+            className="w-32 h-32 rounded-full mx-auto mb-6 object-cover border-4 border-primary/20 hover:border-primary/40 hover:scale-110 transition-all duration-500 hover:rotate-6"
           />
         </div>
         
