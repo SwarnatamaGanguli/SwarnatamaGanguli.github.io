@@ -1,3 +1,4 @@
+import swarnaImage from "@/assets/Swarna.png.asset.json";
 
 export function Hero() {
   return (
@@ -5,7 +6,7 @@ export function Hero() {
       <div className="container mx-auto text-center animate-fade-in">
         <div className="mb-6">
           <img
-            src="/lovable-uploads/8c22d14b-28e6-48ed-a4b9-dbc9a9801e39.png"
+            src={swarnaImage.url}
             alt="Swarnatama Ganguli"
             className="w-32 h-32 rounded-full mx-auto mb-6 object-cover border-4 border-primary/20 hover:border-primary/40 hover:scale-110 transition-all duration-500 hover:rotate-6"
           />
