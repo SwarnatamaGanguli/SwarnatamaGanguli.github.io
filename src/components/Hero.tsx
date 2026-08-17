@@ -1,4 +1,4 @@
-import swarnaImage from "@/assets/Swarna.png.asset.json";
+import swarnaImage from "@/assets/Swarna.png";
 
 export function Hero() {
   return (
