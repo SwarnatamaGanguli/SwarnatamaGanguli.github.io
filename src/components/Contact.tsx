@@ -69,7 +69,7 @@ export function Contact() {
                   Let's Connect
                 </h3>
                 <p className="text-muted-foreground leading-relaxed hover:text-foreground transition-colors duration-300 hover:translate-x-2 transform">
-                  I'm always interested in discussing new opportunities, partnerships, 
+                  I'm always interested in discussing new opportunities related to Generative AI / Agentic AI, partnerships, 
                   and innovative approaches to learning and development. Whether you're 
                   looking for strategic consulting or want to explore collaboration possibilities, 
                   I'd love to hear from you.
