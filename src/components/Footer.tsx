@@ -5,7 +5,7 @@ export function Footer() {
       <div className="container mx-auto">
         <div className="text-center">
           <p className="text-muted-foreground mb-4">
-            © 2024 Swarnatama Ganguli. All rights reserved.
+            © 2026 Swarnatama Ganguli. All rights reserved.
           </p>
           
           <div className="flex justify-center space-x-6">
