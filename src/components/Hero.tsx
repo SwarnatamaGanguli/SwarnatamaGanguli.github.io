@@ -6,7 +6,7 @@ export function Hero() {
       <div className="container mx-auto text-center animate-fade-in">
         <div className="mb-6">
           <img
-            src={swarnaImage.url}
+            src={swarnaImage}
             alt="Swarnatama Ganguli"
             className="w-32 h-32 rounded-full mx-auto mb-6 object-cover border-4 border-primary/20 hover:border-primary/40 hover:scale-110 transition-all duration-500 hover:rotate-6"
           />
